@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: Please cite this release if you use the software.
+type: software
+title: High-Engagement User Study
+authors:
+  - family-names: Lynch
+    given-names: Cara
+version: 1.0.0
+license: MIT

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.conda/
+runs/
+inputs/
+duckdb_tmp/
+*.parquet
+*.zst
+*.joblib
+.env
+outputs/*
+!outputs/selected_subreddits_final.csv

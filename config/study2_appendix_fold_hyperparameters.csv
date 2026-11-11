@@ -1,0 +1,7 @@
+Test month,Logistic C,Logistic class weighting,LightGBM num_leaves,LightGBM reg_lambda,LightGBM is_unbalance,LightGBM best_iteration / final fixed tree count
+2021-07,10.0,balanced,63,1.0,False,68
+2021-08,10.0,balanced,63,1.0,False,97
+2021-09,10.0,balanced,15,0.0,False,616
+2021-10,10.0,balanced,15,1.0,False,496
+2021-11,10.0,balanced,31,1.0,True,226
+2021-12,10.0,balanced,63,1.0,False,136

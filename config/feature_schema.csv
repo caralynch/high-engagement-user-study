@@ -1,0 +1,20 @@
+feature_name,feature_group,source_window,description
+feature_n_submissions_prev,activity,feature_month_t_minus_1,Number of submissions authored by the user in the feature month.
+feature_n_comments_prev,activity,feature_month_t_minus_1,Number of comments authored by the user in the feature month.
+feature_n_total_activity_prev,activity,feature_month_t_minus_1,Submissions plus comments authored by the user in the feature month.
+feature_submission_share_prev,activity,feature_month_t_minus_1,Share of feature-month activity that was submissions.
+feature_comment_share_prev,activity,feature_month_t_minus_1,Share of feature-month activity that was comments.
+feature_n_active_days_prev,activity,feature_month_t_minus_1,"Distinct active days in the feature month, where timestamps are available."
+feature_mean_activity_per_active_day_prev,activity,feature_month_t_minus_1,Mean authored contributions per active day in the feature month.
+feature_received_engagement_total_prev,historical_engagement,feature_month_t_minus_1,Unique other-user child comments received in the feature month.
+feature_received_engagement_per_activity_prev,historical_engagement,feature_month_t_minus_1,Feature-month received engagement divided by feature-month activity.
+feature_log_received_engagement_rate_prev,historical_engagement,feature_month_t_minus_1,log1p(unique feature received engagement) minus log1p(feature activity).
+feature_received_comments_on_submissions_prev,historical_engagement,feature_month_t_minus_1,Submission-thread component: other-user comments received on the user's submissions in the feature month.
+feature_received_replies_to_comments_prev,historical_engagement,feature_month_t_minus_1,Direct-reply component: other-user replies received by the user's comments in the feature month.
+feature_overlap_submission_and_comment_reply_events_prev,historical_engagement,feature_month_t_minus_1,Other-user child comments attributed through both submission-thread and direct-reply routes in the feature month.
+feature_n_active_subreddits_prev,subreddit_participation,feature_month_t_minus_1,Number of subreddits in which the user authored content in the feature month.
+feature_subreddit_hhi_prev,subreddit_participation,feature_month_t_minus_1,Herfindahl-Hirschman concentration of feature-month activity across subreddits.
+feature_subreddit_entropy_prev,subreddit_participation,feature_month_t_minus_1,Entropy of feature-month activity across subreddits.
+feature_top_subreddit_activity_share_prev,subreddit_participation,feature_month_t_minus_1,Share of feature-month activity in the user's most active subreddit.
+feature_is_single_subreddit_user_prev,subreddit_participation,feature_month_t_minus_1,Whether all feature-month activity occurred in one subreddit.
+feature_month_number,calendar,feature_month_t_minus_1,Calendar month number of the feature month.

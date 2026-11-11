@@ -1,0 +1,10 @@
+position,feature_name
+1,feature_n_submissions_prev
+2,feature_n_total_activity_prev
+3,feature_submission_share_prev
+4,feature_n_active_days_prev
+5,feature_mean_activity_per_active_day_prev
+6,feature_received_engagement_total_prev
+7,feature_log_received_engagement_rate_prev
+8,feature_received_replies_to_comments_prev
+9,feature_overlap_submission_and_comment_reply_events_prev

@@ -1,0 +1,3 @@
+* text=auto eol=lf
+outputs/selected_subreddits_final.csv -text
+config/*.csv -text
