@@ -4,6 +4,8 @@ This repository accompanies Chapter 5, the account study, in Cara Lynch's unpubl
 
 The study compares simple ranking baselines with logistic regression and LightGBM. It uses prior-month activity across 20 Reddit communities to predict which users will rank in the top 10% for received engagement per contribution the next month.
 
+The [Zenodo archive for v1.0.0](https://doi.org/10.5281/zenodo.24142352) is the version to cite. It contains the Chapter 5 code, model settings and a runnable synthetic example. The original Reddit data and fitted models are excluded.
+
 ## Try it without Reddit data
 
 With Conda installed, open a terminal in the folder containing this README and run:
@@ -14,7 +16,18 @@ conda activate high-engagement-study
 python -B examples/smoke_models.py
 ```
 
-The example makes a table of 330 rows, one for each of 30 invented accounts in each of 11 months. It fits both learned models and checks their outputs across six rounds of training and testing. Each run keeps the invented input table, metrics, validation reports and LightGBM model files in a new folder under `runs/synthetic/`. The script prints the folder path. The example was tested on Windows with Python 3.11.14 and the package versions in `environment.yml`.
+The example makes a table of 330 rows, one for each of 30 invented accounts in each of 11 months. It fits both learned models and checks their outputs across six rounds of training and testing. It prints the path to a new run folder under `runs/synthetic/`, which keeps the invented input table and the results.
+
+In that run folder, open `results/logistic/` and `results/lightgbm/`. Start with each model's `*_output_validation_summary.json` to see whether it passed the checks, then open `*_metrics_by_fold.csv` to see the scores for each held-out month. The LightGBM folder also contains the model files fitted on the invented data.
+
+The example was tested on Windows with Python 3.11.14 and the package versions in `environment.yml`.
+
+## Repository guide
+
+- [`Preprocessing/`](Preprocessing/) converts, cleans and pseudonymises the monthly Reddit files and filters them to the selected communities.
+- [`Modelling/`](Modelling/) builds and checks the account-month panel, runs the ranking baselines, and fits and evaluates the models.
+- [`config/`](config/) records the feature schema, selected predictors, fold calendar and selected hyperparameters.
+- [`examples/`](examples/) contains the synthetic check and a wrapper for fitting and validating both models from a prepared panel.
 
 ## Run with compatible inputs
 
